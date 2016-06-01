@@ -4,10 +4,10 @@ var generator = null;
 var hooks = null;
 
 function setGenerator() {
-  var generator_path = process.argv[3];
+  var generator_path = process.argv[2];
 
   if (!generator_path) {
-    console.log('node swagger_to_json.js SWAGGER_SPEC_PATH CONF_PATH');
+    console.log('node swagger_to_json.js GENERATOR_PATH');
     process.exit(-1);
   }
 

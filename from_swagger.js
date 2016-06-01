@@ -21,11 +21,14 @@ exports.definitions = function (swagger_spec, generator) {
 
 exports.paths = function (swagger_spec, generator) {
   _.each(swagger_spec.paths, function (path_content, path) {
+    console.log(path);
     _.each(path_content, function (verb_content, verb) {
       if (verb.slice(0, 2) == 'x-')
         return;
 
-      var body = _.find(verb_content.parameters, 'in', 'body');
+      var body = _.find(verb_content.parameters, function (param) {
+        return param.in == 'body';
+      });
 
       if (body) {
         var context = {'swagger_spec': swagger_spec,

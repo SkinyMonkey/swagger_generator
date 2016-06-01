@@ -1,0 +1,24 @@
+{
+  "name": "swagger_generator",
+  "version": "1.0.0",
+  "description": "*Guess I got my swagger back!*",
+  "main": "swagger_generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkinyMonkey/swagger_generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkinyMonkey/swagger_generator/issues"
+  },
+  "homepage": "https://github.com/SkinyMonkey/swagger_generator#readme",
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "md5": "^2.1.0",
+    "request-promise": "^3.0.0"
+  }
+}
